@@ -9,17 +9,22 @@ import { NativeAudio } from '@ionic-native/native-audio';
 export class HomePage {
 
   image = 'button.png';
+  runAudio = false;
   constructor(public navCtrl: NavController, public nativeAudio: NativeAudio) {
 
   }
 
   playSound() {
     this.image = 'button_click.png';
-    this.nativeAudio.stop('uniqueId1');
+    if (this.runAudio) {
+      this.nativeAudio.stop('uniqueId1');
+    }
     this.nativeAudio.preloadSimple('uniqueId1', 'assets/audio/twa.mp3');
     this.nativeAudio.play('uniqueId1');
+    this.runAudio = true;
     setTimeout(() => {
       this.image = 'button.png';
+      this.runAudio = false;
      }, 2000);
   }
 
