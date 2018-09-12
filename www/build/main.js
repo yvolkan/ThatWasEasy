@@ -79,10 +79,9 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-home',template:/*ion-inline-start:"/Users/volkanyilmaz/projects/twe/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      EASY\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <div text-center class="img-container">\n      <img id="img" (click)="playSound()" src="/assets/imgs/{{image}}" />\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/volkanyilmaz/projects/twe/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */]])
     ], HomePage);
     return HomePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home.js.map
